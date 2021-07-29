@@ -15,6 +15,12 @@
   </ValidationProvider>
 </template>
 
+<style global>
+.ql-editor {
+  min-height: 100px;
+}
+</style>
+
 <script>
 import "quill/dist/quill.core.css";
 import "quill/dist/quill.snow.css";
@@ -48,6 +54,7 @@ export default {
       editorOption: {
         // Some Quill options...
         modules: modules,
+        placeholder: this.placeholder,
       },
     };
   },
